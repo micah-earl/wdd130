@@ -1,5 +1,7 @@
 body {
-    background-color: #cccc
+    background-color: #c2c2c2cc;
+    margin: 0;
+    padding: 0;
 }
 #content{
     background-color: darkgrey;
@@ -39,13 +41,18 @@ h1{
     text-align: center;
 }
 img{
-    width: 400px;
-    
+    width: 50%;
+    margin: 25px auto;
+    padding: 25px ;
+    border: 10px solid black; 
+    box-sizing: border-box;
+
     
 }
 
 footer{
     margin: 15px;
+    background-color: rgb(165, 165, 165);
 
 }
 
@@ -56,4 +63,11 @@ footer a {
     text-align: center;
     line-height: 1.5rem;
     padding: 20
+}
+p{
+    padding: 0 20px;
+    width: 50%;
+    margin: auto;
+    line-height: 2em;
+
 }
