@@ -1,0 +1,246 @@
+h1, h2, h3 {
+    text-align: center; 
+    color:#F5F5F5;
+    
+
+}
+header{
+    background-color: rgb(34, 34, 34);
+    padding-block: 40px;
+    
+     
+#title_1{
+    font-family: "Roboto Mono", serif;
+}  
+}
+header a {
+    text-decoration: none;
+    font: bold;
+}
+.nav {
+    background-color: #333;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav_link:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+body{
+    background-color: rgb(4, 4, 4);
+}
+.event_feed_container{
+    shape-image-threshold: initial;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.event_box{
+    background-color: #F5F5F5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px Rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s
+}
+.event_box_button {
+    padding: 10px 20px;
+    font-size: 17px;
+    font: bold;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    
+}
+.see_more_box{
+    padding: 10px 20px;
+    font-size: 17px;
+    font: bold;
+    cursor: pointer;
+    color:white;
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    
+    
+
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
+    color: #F5F5F5;
+    text-align: center;
+    padding: 20px;
+}
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer p {
+    margin-bottom: 10px;
+}
+.footer-nav {
+    display: flex; /* Use Flexbox to align items in a row */
+    justify-content: center; /* Centers the links horizontally */
+}
+
+.footer_nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+
+}
+.footer_nav a:hover{
+    color: #272727;
+
+}
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block; /* To make the icon behave like a button */
+    margin: 0 15px; /* Spacing between social icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links img {
+    width: 40px;  /* Adjust the icon size */
+    height: 40px;
+    border-radius: 50%; /* Makes the image circular */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth scaling and filter effect */
+}
+
+.social-links a:hover img {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+    filter: brightness(1.2); /* Brightens the icon when hovered */
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Event Form Styling */
+.event_form {
+    width: 50%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.877);
+}
+
+.event_form h2 {
+    text-align: center;
+    color: #c9c9c9;
+}
+
+.event_form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.event_form input, 
+.event_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.event_form button {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.event_form button:hover {
+    background-color: #0056b3;
+}
+
+/* Event Feed Container */
+.event_feed_container {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Event Box Styling */
+.event_box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event_box:hover {
+    transform: scale(1.02);
+}
+
+.event_box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.event_box h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.event_box p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.event_box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.event_box button:hover {
+    background-color: #959595;
+}
