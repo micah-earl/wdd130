@@ -8,20 +8,33 @@
 
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <h1>Informed</h1>
-        </a>
-        <a href="profile.html">
-            <img src="https://picsum.photos/20/20" alt="account">
-        </a>    
-        <input type="text" name="searchbox" id="Search..." placeholder="Search...">
-        <nav>
+    <header class="header">
+        <div id="profile_icon_header">
+            <a  href="profile.html">
+                <img class="profile_icon" src="https://picsum.photos/50/50" alt="account">
+            </a>    
+        </div>
+        <div>
+            <a class="logo"  style="text-decoration: none;" href="index.html">
+                <h1 id="logo_font">Informed</h1>
+            </a>
+        </div>
+        
+        <div id="search_bar">
+            <input class="search_bar" type="text" name="searchbox" id="Search..." placeholder="Search...">
+        </div>
+        
+      
+    </header>
+    
+    <main>
+        <nav class="nav">
             <a href="feed.html">Feed</a>
             <a href="map.html">Map</a>
             <a href="profile.html">Profile</a>
             <button id="newEventBtn">New event</button>
         </nav>
+    
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -29,46 +42,85 @@
                 <p>Please enter a description</p>
             </div>
         </div>
-    </header>
-    
-    
-    <main>
-        <div>
-            <button class="" data-category="all">
-               ALL 
-            </button>
-            <button class="" data-category="outdoors">
-                OUTDOORS 
-            </button>
-            <button class="" data-category="chill"> 
-                CHIll
-            </button>
-            <button class="" data-category="sports">
-                SPORTS
-            </button>
-        </div>
-        <div class="event_section">
-            <div class="Event_box">
-                <a href="profile.html">
-                    <img src="https://picsum.photos/20/20" alt="account">
-                    <h4>John_doe</h4>
-                </a>
-                <h2>Spike Ball</h2>
-                <p>Spike ball tournement were going to be playing spike ball 2v2 whoever wins gets 50$</p>
-                <button> See more </button>
-                <img src="https://picsum.photos/50/50" alt="">
-            </div>
-            <div class="Event_box">
-                <a href="profile.html">
-                    <img src="https://picsum.photos/20/20" alt="account">
-                    <h4>John_doe</h4>
-                </a>
-                <h2>Spike Ball</h2>
-                <p>Spike ball tournement were going to be playing spike ball 2v2 whoever wins gets 50$</p>
-                <button> See more </button>
-                <img src="https://picsum.photos/50/50" alt="">
+        
+        <div class="sort_events_container">
+            <h2 id="sort_text">Sort by category</h2>
+            <div class="sort_buttons">
+                <button class="sort_box" data-category="all">ALL</button>
+                <button class="sort_box" data-category="outdoors">OUTDOORS</button>
+                <button class="sort_box" data-category="chill">CHILL</button>
+                <button class="sort_box" data-category="sports">SPORTS</button>
+                <button class="sort_box" data-category="sports">GAMMING</button>
+                <button class="sort_box" data-category="sports">PARTY</button>
+                <button class="sort_box" data-category="sports">MOVIES</button>
+                <button class="sort_box" data-category="sports">SPIRITUAL</button>
             </div>
         </div>
+        <div class="event_container">
+            <div class="event_box">
+                <div class="event_header">
+                    <img class="profile_icon" src="https://picsum.photos/50/50" alt="profile" class="profile_pic">
+                    <h4 class="username">John_doe</h4>
+                </div>
+                <div class="event_info_container">
+                    <div class="event_info_text">
+                        <h2 class="event_title">Cookie Making</h2>
+                        <p class="event_description">Tonight we're going to be making cookies. It will be a blast, please come!</p>
+                        <p class="event_info">20 ⏳ | <span class="location">North Point Apt 301 Men's</span></p>
+                        <button class="see_more">See More</button>
+                    </div>
+                    <img src="https://picsum.photos/200/150" alt="event image" class="event_image">
+                </div>
+            </div>
+            <div class="event_box">
+                <div class="event_header">
+                    <img class="profile_icon" src="https://picsum.photos/50/50" alt="profile" class="profile_pic">
+                    <h4 class="username">John_doe</h4>
+                </div>
+                <div class="event_info_container">
+                    <div class="event_info_text">
+                        <h2 class="event_title">Cookie Making</h2>
+                        <p class="event_description">Tonight we're going to be making cookies. It will be a blast, please come!</p>
+                        <p class="event_info">20 ⏳ | <span class="location">North Point Apt 301 Men's</span></p>
+                        <button class="see_more">See More</button>
+                    </div>
+                    <img src="https://picsum.photos/200/150" alt="event image" class="event_image">
+                </div>
+            </div>
+            <div class="event_box">
+                <div class="event_header">
+                    <img class="profile_icon" src="https://picsum.photos/50/50" alt="profile" class="profile_pic">
+                    <h4 class="username">John_doe</h4>
+                </div>
+                <div class="event_info_container">
+                    <div class="event_info_text">
+                        <h2 class="event_title">Cookie Making</h2>
+                        <p class="event_description">Tonight we're going to be making cookies. It will be a blast, please come!</p>
+                        <p class="event_info">20 ⏳ | <span class="location">North Point Apt 301 Men's</span></p>
+                        <button class="see_more">See More</button>
+                    </div>
+                    <img src="https://picsum.photos/200/150" alt="event image" class="event_image">
+                </div>
+            </div>
+        
+            <div class="event_box">
+                <div class="event_header">
+                    <img class="profile_icon" src="https://picsum.photos/50/50" alt="profile" class="profile_pic">
+                    <h4 class="username">John_doe</h4>
+                </div>
+                <div class="event_info_container">
+                    <div class="event_info_text">
+                        <h2 class="event_title">Spike Ball Tournament</h2>
+                        <p class="event_description">Join us for a 2v2 Spike Ball tournament! Winner gets $50.</p>
+                        <p class="event_info">15 ⏳ | <span class="location">BYU-I Campus Field</span></p>
+                        <button class="see_more">See More</button>
+                    </div>
+                    <img src="https://picsum.photos/200/150" alt="event image" class="event_image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     </main> 
     <footer>
         <div class="footer_content">
@@ -98,4 +150,5 @@
     </footer>
     
 </body>
+<script src="informed.js"></script>
 </html>
