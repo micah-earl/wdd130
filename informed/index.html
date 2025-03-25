@@ -8,23 +8,14 @@
 
 </head>
 <body>
-    <header class="header">
-        <div id="profile_icon_header">
-            <a  href="profile.html">
+    <header>
+            <a id="profile_icon_header"  href="profile.html">
                 <img class="profile_icon" src="https://picsum.photos/50/50" alt="account">
             </a>    
-        </div>
-        <div>
-            <a class="logo"  style="text-decoration: none;" href="index.html">
+            <a style="text-decoration: none;" href="index.html">
                 <h1 id="logo_font">Informed</h1>
             </a>
-        </div>
-        
-        <div id="search_bar">
-            <input class="search_bar" type="text" name="searchbox" id="Search..." placeholder="Search...">
-        </div>
-        
-      
+            <input  type="text" name="searchbox" id="Search..." placeholder="Search...">   
     </header>
     
     <main>
@@ -45,16 +36,20 @@
         
         <div class="sort_events_container">
             <h2 id="sort_text">Sort by category</h2>
-            <div class="sort_buttons">
-                <button class="sort_box" data-category="all">ALL</button>
-                <button class="sort_box" data-category="outdoors">OUTDOORS</button>
-                <button class="sort_box" data-category="chill">CHILL</button>
-                <button class="sort_box" data-category="sports">SPORTS</button>
-                <button class="sort_box" data-category="sports">GAMMING</button>
-                <button class="sort_box" data-category="sports">PARTY</button>
-                <button class="sort_box" data-category="sports">MOVIES</button>
-                <button class="sort_box" data-category="sports">SPIRITUAL</button>
-            </div>
+            <div class="scroll_wrapper">
+                <div class="sort_buttons">
+                    <button class="sort_box" data-category="all">ALL</button>
+                    <button class="sort_box" data-category="outdoors">OUTDOORS</button>
+                    <button class="sort_box" data-category="chill">CHILL</button>
+                    <button class="sort_box" data-category="sports">SPORTS</button>
+                    <button class="sort_box" data-category="sports">GAMMING</button>
+                    <button class="sort_box" data-category="sports">PARTY</button>
+                    <button class="sort_box" data-category="sports">MOVIES</button>
+                    <button class="sort_box" data-category="sports">SPIRITUAL</button>
+                </div>
+        </div>
+        <div class="center">
+            <h1> Recomended for you </h>
         </div>
         <div class="event_container">
             <div class="event_box">
