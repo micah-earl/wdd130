@@ -329,8 +329,20 @@ footer {
     height: 30px;
 }
 .events_near{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
+    width: 100%;
+}
+#near_me{
+    text-align: right;
+
+    margin-right: 25px;
+} 
+#title_event{
+    text-align: center;
+    width: 100%;
 }
 
 
