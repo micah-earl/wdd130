@@ -3,10 +3,26 @@ header{
     display:flex ;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px 20px;
-    height: 150px;
+    
     width: 100%;
+}
+header a{
+     padding-left: 50px;
+}
+#search_bar{
+    border-radius: 15px;
+    height: 75px;
+    width: 75px;
+    margin-right: 125px;
+
+}
+h2,h1,h3{
+    font: #fff;
+}
+body{
+    margin-bottom: 100px;
+    background-color: #333;
 }
     
     
@@ -15,12 +31,10 @@ header{
     color:  #fff;
 }
 
-#profile_icon_header{
+#profile_icon_header img {
     text-align: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    height: 50px;
-    width: 50px;
+   
+    width: 90px;
 }
 
 .profile_icon{
@@ -49,7 +63,7 @@ header{
 }
 .sort_buttons {
     display: flex;
-    gap: 25px;
+    gap: 75px;
     flex-wrap: nowrap;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -77,6 +91,7 @@ header{
 
 .center{
     text-align: center;
+    color: #fff;
 }
 
 
@@ -101,6 +116,10 @@ header{
     transition: transform 0.3s ease;
     align-items: center;
 }
+.plus_icon{
+    background-color: #202020;
+    
+}
 
 .event_box:hover {
     transform: scale(1.05);
@@ -115,7 +134,7 @@ header{
 .profile_icon {
     border-radius: 50%;
     width: 50px;
-    height: 50px;
+   
 }
 
 .username {
@@ -131,9 +150,9 @@ header{
     width: 100%;
 }
 
-/* Text information of the event */
+
 .event_info_text {
-    flex: 1; /* Allow the text to take up remaining space */
+    flex: 1; 
 }
 
 .event_title {
@@ -308,4 +327,18 @@ footer {
 .social-links img {
     width: 30px;
     height: 30px;
+}
+.events_near{
+    text-align: center;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .event_info_container {
+        flex-direction: column;
+       
+    }
+
 }

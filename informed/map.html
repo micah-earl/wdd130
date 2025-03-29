@@ -9,33 +9,41 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <h1>Informed</h1>
-        </a>
-        <a href="profile.html">
-            <img src="https://picsum.photos/20/20" alt="account">
+        <a id="profile_icon_header" href="profile.html">
+            <img class="profile_icon" src="https://picsum.photos/90/90" alt="account">
         </a>    
-        <input type="text" name="searchbox" id="Search..." placeholder="Search...">
-        <nav>
+        <a style="text-decoration: none;" href="index.html">
+            <h1 id="logo_font">Informed</h1>
+        </a>
+        <img id="search_bar" src="images /search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </header>
+    
+    <main>
+        <nav class="nav">
             <a href="feed.html">Feed</a>
             <a href="map.html">Map</a>
             <a href="profile.html">Profile</a>
-            <button id="newEventBtn">New event</button>
+            <button class="plus_icon">
+                <img src="images /add.png" alt="Make new event">
+            </button>
         </nav>
+    
         <div id="modal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Create new event</h2>
-                <p>Please enter a description</p>
+                <div>
+                    <span class="close">&times;</span>
+                    <h2>Create New Event</h2>
+                    <input type="text" name=" Event_title" placeholder="Enter event title" id="event_input">
+                    <p>Please enter a description</p>
+                </div>
+                
             </div>
         </div>
-    </header>
-    <main>
+        <div class="events_near">
+            <h2>Event Map </h2>
+            <button> events near me.</button>
+        </div>
         <div class="map">
-            <header class="map_header">
-                <h2>Event Map </h2>
-                <button> events near me.</button>
-            </header>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42815.15164370856!2d-111.792912!3d43.82826500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e1!3m2!1sen!2sus!4v1741966417590!5m2!1sen!2sus" 
                 width="100%" 
@@ -45,42 +53,34 @@
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-            <footer>
-                <!-- this if for grey space -->
-            </footer>
         </div>
-    
-
-
-    </main>
-    
-    
+    </main> 
+        
+       
     <footer>
         <div class="footer_content">
-            <p>&copy; 2025 INFORMED. All rights reserved. </p>
+            <p>&copy; 2025 INFORMED. All rights reserved.</p>
             <nav class="footer_nav">
                 <ul>
                     <li><a href="html files/about_page.html">About us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#"> Terms of service </a></li>
+                    <li><a href="#">Terms of service</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
-                
             </nav>
-            
             <div class="social-links">
                 <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                    <img src="images/icons8-instagram-50.png" alt="Instagram logo">
+                    <img src="images /icons8-x-50.png" alt="Instagram logo">
                 </a>
-                <a href="https://www.facebook.com" target="_blank" aria-label="Instagram">
-                    <img src="images/icons8-facebook-50.png" alt="Instagram logo">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images /icons8-instagram-50.png" alt="Facebook logo">
                 </a>
-                <a href="https://www.x.com" target="_blank" aria-label="Instagram">
-                    <img src="images/icons8-x-50.png" alt="Instagram logo">
+                <a href="https://www.x.com" target="_blank" aria-label="X (Twitter)">
+                    <img src="images /icons8-facebook-50.png" alt="X logo">
                 </a>
             </div>     
         </div>
     </footer>
-    
 </body>
+<script src="informed.js"></script>
 </html>
